@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Elements</title>
+</head>
+<body>
+  <!-- Table Elements 
+          table = parent element
+          tr = table row(row)
+          th = table header (heading column)
+          td =table date (date column)
+
+          colspan = merge column cells
+          rowspan = mergr row cells
+
+          grouping table contents
+             thead = group head contents
+             tbody = group body contents
+             tfoot = group footer contents
+  -->
+  <h2>Sample table using TH</h2>
+  <table border="1"width="300px">
+    <tr>
+      <th>title1</th>
+      <th>title2</th>
+      <th>title3</th>
+      <th rowspan="3">title4</th>
+    </tr>
+    <tr>
+      <th>title5</th>
+      <th>title6</th>
+      <th>title7</th>
+      <!-- <th>title8</th> -->
+    </tr>
+    <tr>
+      <th>title9</th>
+      <th>title10</th>
+      <th>title11</th>
+      <!-- <th>title12</th> -->
+    </tr>
+  </table>
+
+  <h2>Sample table using TD</h2>
+  <table border="1" width="300px">
+    <tr>
+      <td colspan="4">date1</td>
+      <!-- <td>date2</td> -->
+      <!-- <td>date3</td> -->
+      <!-- <td>date4</td> -->
+    </tr>
+    <tr>
+      <td>date5</td>
+      <td>date6</td>
+      <td>date7</td>
+      <td>date8</td>
+    </tr>
+    <tr>
+      <td>date9</td>
+      <td>date10</td>
+      <td>date11</td>
+      <td>date12</td>
+    </tr>
+
+  </table>
+
+  <h2>Sample table using TH and TD</h2>
+  <table border="1" width="100%">
+    <tr>
+      <th>Name</th>
+      <th>Adress</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>John Smith</td>
+      <td>California</td>
+      <td>35</td>
+      <td>johnsmith@yahoo.com</td>
+    </tr>
+    <tr>
+      <td>Thomas Warp</td>
+      <td>nebraska</td>
+      <td>45</td>
+      <td>thomas1234@gmail.com</td>
+    </tr>
+  </table>
+
+  <h2>Sample table using Colspan</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Contact Nubmer</th>
+      <!-- <th></th> -->
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>234265373</td>
+      <td>364939274</td>
+    </tr>
+    <tr>
+      <td>steve Jobs</td>
+      <td>39476393</td>
+      <td>57398437</td>
+    </tr>
+
+
+  </table>
+
+  <h2>Sample table using Rowspan</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <td>Bill Gates</td>
+      <td>Steve Jobs</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Contact number</th>
+      <td>947595959</td>
+      <td>084758599</td>
+    </tr>
+      <!-- <th></th> -->
+      <td>037459449</td>
+      <td>485949393</td>
+  </table>
+
+
+
+  <h2>Sample table using grouping table contents</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>title1</th>
+        <th>title2</th>
+        <th>title3</th>
+      </tr>
+      <tr>
+        <th>subtitle1</th>
+        <th>subtitle2</th>
+        <th>subtitle3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>date 1 </td>
+        <td>date 2 </td>
+        <td>date 3 </td>
+      </tr>
+      <tr>
+        <td>date 4 </td>
+        <td>date 5 </td>
+        <td>date 6 </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+      <th>total 1</th>
+      <th>total 2</th>
+      <th>total 3</th>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+</html>
